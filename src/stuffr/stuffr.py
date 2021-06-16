@@ -6,7 +6,6 @@
 #
 import numpy
 import math
-import matplotlib
 import matplotlib.cbook
 import matplotlib.pyplot as plt
 import datetime
