@@ -7,9 +7,9 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setuptools.setup(
     name="stuffr",
     version="1.0.0",
-    author="Juha Vierinen",
+    author="Juha Vierinen, Vetle Hofsøy-Woie",
     author_email="juha-pekka.vierinen@uit.no",
-    description="Stuff from R implemented in python",
+    description="Stuff from R implemented in Python",
     long_description=long_description,
     long_description_content_type="text/markdown",
     classifiers=[
@@ -19,10 +19,10 @@ setuptools.setup(
         "Programming Language :: Python :: 3",
     ],
     install_requires=[
-        'h5py>=2.10.0',
-        'numpy>=1.19.5',
-        'scipy>=1.4.1',
-        'matplotlib>=3.3.4'
+        'h5py>=2.7.0',
+        'numpy>=1.13.1',
+        'scipy>=1.0.1',
+        'matplotlib>=3.0.4'
     ],
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
