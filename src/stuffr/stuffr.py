@@ -147,8 +147,9 @@ def load_object(filename):
         return(pickle.load(input))
 
 def date2unix(year,month,day,hour,minute,second):
-    t = datetime.datetime(year, month, day, hour, minute, second)
-    return(time.mktime(t.timetuple()))
+    dt = datetime.datetime(year, month, day, hour, minute, second)
+    timestamp = dt.replace(tzinfo=datetime.timezone.utc).timestamp()
+    return timestamp
 
 def unix2date(x):
     return datetime.datetime.utcfromtimestamp(x)
