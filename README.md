@@ -11,9 +11,9 @@ This is how to upload a project to pipy. This is mainly a note to self, as this 
 
 ~~~
 python3 -m venv /tmp/venv
- source /tmp/venv/bin/activate
- pip install build
- pip install twine
- python3 -m build
- python3 -m twine upload dist/stuffr-1.0.0.tar.gz 
+source /tmp/venv/bin/activate
+pip install build
+pip install twine
+python3 -m build
+python3 -m twine upload dist/stuffr-1.0.0.tar.gz 
 ~~~
