@@ -22,4 +22,8 @@ class TestUnixDate(unittest.TestCase):
         self.assertEqual(expected, timestamp)
         
 if __name__ == '__main__':
+
+    # unittest.main() will look at this file and find all classes
+    # that are subclasses of unittest.TestCases and run all methods in thoses
+    # classes that start with test_
     unittest.main()
