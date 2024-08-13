@@ -209,7 +209,7 @@ def comprz_dB(xx,fr=0.05):
 
 def decimate(x,dec=2):
     Nout = int(math.floor(len(x)/dec))
-    idx = numpy.arange(Nout,dtype=numpy.int)*int(dec)
+    idx = numpy.arange(Nout,dtype=int)*int(dec)
     res = x[idx]*0.0
 
     for i in numpy.arange(dec):
